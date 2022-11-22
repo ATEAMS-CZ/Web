@@ -21,7 +21,7 @@ export const App = () => {
     <ChakraProvider theme={theme}>
       <Header />
       <Flex background={'dark.700'} flexDirection={'column'} gap={24}>
-        <Section title={'Minecraft servery'} id={'#servery'} subtitle={'Členové admin-týmů všech těchto serverů mohou mít na Discord serveru přidělenou roli podle toho, na jakém serveru působí.'}>
+        <Section title={'Minecraft servery'} id={'servery'} subtitle={'Členové admin-týmů všech těchto serverů mohou mít na Discord serveru přidělenou roli podle toho, na jakém serveru působí.'}>
           <Flex justifyContent={'center'} gap={12} flexWrap={'wrap'} maxWidth={'700px'} margin={'50px auto 0px auto'}>
             <Server imgKey={'qplay'} name={'QPlay.cz'} website={'https://qplay.cz/'} />
             <Server imgKey={'trenend'} name={'Trenend'} website={'https://trenend.eu/'} />
