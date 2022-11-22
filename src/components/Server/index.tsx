@@ -1,4 +1,4 @@
-import {Box, Image, Link} from '@chakra-ui/react';
+import {Image, Link} from '@chakra-ui/react';
 import React from 'react';
 
 interface ServerProps {
@@ -10,7 +10,7 @@ interface ServerProps {
 
 export const Server = ({imgKey, name, website}: ServerProps) => {
   return (
-    <Box transition={'all 0.2s'} cursor={'pointer'} _hover={{
+    <Link href={website} isExternal transition={'all 0.2s'} _hover={{
       transform: 'scale(1.1)',
     }}>
       <Image
@@ -22,6 +22,6 @@ export const Server = ({imgKey, name, website}: ServerProps) => {
       <Link href={website} isExternal>
         {name}
       </Link>
-    </Box>
+    </Link>
   );
 };

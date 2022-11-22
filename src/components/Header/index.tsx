@@ -48,16 +48,16 @@ export const Header = () => {
             base: 'center',
             md: 'flex-start',
           }}>
-            <Button colorScheme={'red'} leftIcon={<FontAwesomeIcon icon={faDiscord} />}>
+            <Button colorScheme={'red'} as={'a'} href={'https://discord.com/invite/9QkwCR2'} leftIcon={<FontAwesomeIcon icon={faDiscord} />}>
                             Discord
             </Button>
 
             <Flex gap={2}>
-              <Button variant='outline' leftIcon={<FontAwesomeIcon icon={faServer} />}>
+              <Button variant='outline' as={'a'} href={'#servery'} leftIcon={<FontAwesomeIcon icon={faServer} />}>
                                 Servery
               </Button>
 
-              <Button variant='outline' leftIcon={<FontAwesomeIcon icon={faUsers} />}>
+              <Button variant='outline' as={'a'} href={'#tym'} leftIcon={<FontAwesomeIcon icon={faUsers} />}>
                                 Tým
               </Button>
             </Flex>

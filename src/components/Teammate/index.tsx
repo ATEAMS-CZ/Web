@@ -1,4 +1,4 @@
-import {Avatar, Box, Text} from '@chakra-ui/react';
+import {Avatar, Link, Text} from '@chakra-ui/react';
 import useSWR from 'swr';
 import {getData} from '../../services';
 import {DiscordUser} from '../../interfaces/DiscordUser';
@@ -9,18 +9,22 @@ import React from 'react';
 interface TeammateProps {
     id: string;
     rank: Rank;
+    link: string;
 }
 
-export const Teammate = ({id, rank}: TeammateProps) => {
+export const Teammate = ({id, rank, link}: TeammateProps) => {
   const {data} = useSWR<DiscordUser>('/users/'+ id, getData);
 
   return (
-    <Box>
+    <Link href={link} transition={'all 0.2s'} _hover={{
+      textDecoration: 'none',
+      transform: 'scale(1.1)',
+    }}>
       <Avatar name={data?.name} src={data?.avatar} size={'2xl'} />
       <Text fontSize={'md'} marginTop={4} marginBottom={2}>{data?.name || 'Loading...'}</Text>
       <Text as={'span'} backgroundColor={rank} color={'white'} paddingX={3} fontSize={'sm'} rounded={'md'} paddingY={1} textTransform={'capitalize'}>
         {getRankName(rank)}
       </Text>
-    </Box>
+    </Link>
   );
 };
