@@ -14,7 +14,7 @@ export const Server = ({imgKey, name, website}: ServerProps) => {
     <Fade direction={'up'} triggerOnce={true}>
       <Link href={website} isExternal transition={'all 0.2s'} _hover={{
         transform: 'scale(1.1)',
-      }}>
+      }} display={'block'}>
         <Image
           src={'/assets/servers/' + imgKey + '/logo.webp'}
           height={'128px'}

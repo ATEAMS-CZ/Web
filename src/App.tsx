@@ -37,6 +37,7 @@ export const App = () => {
             <Server imgKey={'minehub'} name={'MineHub.cz'} website={'https://minehub.cz/'} />
             <Server imgKey={'matherion'} name={'Matherion'} website={'https://matherion.eu/'} />
             <Server imgKey={'lendmark'} name={'LendMark.sk'} website={'https://lendmark.sk/'} />
+            <Server imgKey={'voxelcraft'} name={'VoxelCraft.cz'} website={'https://voxelcraft.cz/'} />
           </Flex>
 
           <Fade direction={'up'} triggerOnce={true}>
