@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.4.1",
-    "@emotion/react": "^11.0.0",
+    "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.0.0",
     "@fontsource/inter": "^4.5.14",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
@@ -24,6 +24,7 @@
     "eslint-config-google": "^0.14.0",
     "framer-motion": "^6.2.9",
     "react": "^18.1.0",
+    "react-awesome-reveal": "^4.1.0",
     "react-dom": "^18.1.0",
     "react-icons": "^3.0.0",
     "react-scripts": "5.0.1",

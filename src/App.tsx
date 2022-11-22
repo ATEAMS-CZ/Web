@@ -13,6 +13,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faDiscord, faInstagram, faGithub} from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope, faPlus} from '@fortawesome/free-solid-svg-icons';
 import {AddServerModal} from './components/modals/AddServerModal';
+import {Fade} from 'react-awesome-reveal';
 
 export const App = () => {
   const [addServer, setAddServer] = React.useState(false);
@@ -38,11 +39,13 @@ export const App = () => {
             <Server imgKey={'lendmark'} name={'LendMark.sk'} website={'https://lendmark.sk/'} />
           </Flex>
 
-          <Button onClick={() => {
-            setAddServer(true);
-          }} variant={'outline'} marginTop={8} colorScheme={'red'} leftIcon={<FontAwesomeIcon icon={faPlus} />}>Pridať server</Button>
+          <Fade direction={'up'} triggerOnce={true}>
+            <Button onClick={() => {
+              setAddServer(true);
+            }} variant={'outline'} marginTop={8} colorScheme={'red'} leftIcon={<FontAwesomeIcon icon={faPlus} />}>Pridať server</Button>
 
-          <Divider margin={'50px auto'} width={'80px'} backgroundColor={'brand.100'} borderColor={'brand.100'} opacity={1} height={1} rounded={'md'} />
+            <Divider margin={'50px auto'} width={'80px'} backgroundColor={'brand.100'} borderColor={'brand.100'} opacity={1} height={1} rounded={'md'} />
+          </Fade>
         </Section>
 
         <Section title={'Tým stojící za ATEAMS'} id={'tym'} subtitle={
