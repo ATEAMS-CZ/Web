@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Button, Flex, Modal,
   ModalBody,
-  ModalCloseButton,
   ModalContent,
   ModalFooter,
   ModalHeader,
@@ -27,7 +26,6 @@ export const AddServerModal = ({isOpen, onClose}: AddServerModalProps) => {
       <ModalOverlay />
       <ModalContent backgroundColor={'gray.800'}>
         <ModalHeader color={'brand.50'}>Podmínky přijetí serveru</ModalHeader>
-        <ModalCloseButton />
         <ModalBody>
           <Flex gap={8} flexDirection={'column'}>
             <Paragraph title={'Profesionalita a kvalitní reprezentace'} text={'Pozitivní recenze a kvalitní ohlasy na server dovedou tuto oblast skvěle popsat. Mimo jiné by se sám server měl prezentovat nekonfliktně a taktéž by měl být co nejvíce korektní'} />
