@@ -69,16 +69,16 @@ export const App = () => {
         <Flex justifyContent={'center'} padding={8} marginTop={24} textAlign={'center'}>
           <Box>
             <Flex justifyContent={'center'} marginBottom={4} gap={4} fontSize={'2xl'}>
-              <Link href={'https://discord.com/invite/9QkwCR2'} isExternal>
+              <Link href={'https://discord.com/invite/9QkwCR2'} aria-label={'ATEAMS.cz Discord'} isExternal>
                 <FontAwesomeIcon icon={faDiscord} />
               </Link>
-              <Link href={'https://www.instagram.com/ateams.cz/'} isExternal>
+              <Link href={'https://www.instagram.com/ateams.cz/'} aria-label={'ATEAMS.cz Instagram'} isExternal>
                 <FontAwesomeIcon icon={faInstagram} />
               </Link>
-              <Link href={'https://github.com/ATEAMS-CZ'} isExternal>
+              <Link href={'https://github.com/ATEAMS-CZ'} aria-label={'ATEAMS.cz GitHub'} isExternal>
                 <FontAwesomeIcon icon={faGithub} />
               </Link>
-              <Link href={'mailto:management@ateams.cz'} isExternal>
+              <Link href={'mailto:management@ateams.cz'} aria-label={'ATEAMS.cz Email'} isExternal>
                 <FontAwesomeIcon icon={faEnvelope} />
               </Link>
             </Flex>

@@ -69,6 +69,7 @@ export const Header = () => {
           height={'300px'}
           width={'300px'}
           animation={`${logoPulsing} 5s ease-in-out infinite`}
+          alt={'ATEAMS.cz Logo'}
         />
       </Flex>
     </Flex>
