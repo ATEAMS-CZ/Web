@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background: #040e10;
+}
+
 ::-webkit-scrollbar {
     width: 16px;
 }
