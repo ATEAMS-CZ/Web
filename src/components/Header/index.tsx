@@ -67,6 +67,7 @@ export const Header = () => {
         <Image
           src={'assets/img/logo_big.webp'}
           height={'300px'}
+          width={'300px'}
           animation={`${logoPulsing} 5s ease-in-out infinite`}
         />
       </Flex>

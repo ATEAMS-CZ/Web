@@ -18,6 +18,7 @@ export const Server = ({imgKey, name, website}: ServerProps) => {
         <Image
           src={'/assets/servers/' + imgKey + '/logo.webp'}
           height={'128px'}
+          width={'128px'}
           rounded={'md'}
           marginBottom={2}
           loading={'lazy'}
