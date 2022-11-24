@@ -37,8 +37,8 @@ export const AddServerModal = ({isOpen, onClose}: AddServerModalProps) => {
           </Flex>
         </ModalBody>
         <ModalFooter flexDirection={'column'} gap={4}>
-          <Text fontSize={'12px'} color={'gray.100'} borderLeft={'4px solid'} roundedLeft={'sm'} paddingLeft={2} borderLeftColor={'brand.100'}>
-            Odstavce označené jako <Text as="span" color={'brand.100'}>*</Text> nejsou povinné, avšak při rozhodování o přijetí serveru dodávají plusové body
+          <Text fontSize={'12px'} color={'gray.100'} borderLeft={'4px solid'} roundedLeft={'sm'} paddingLeft={2} paddingY={1} borderLeftColor={'brand.100'}>
+            Odstavce označené jako <Text as={'span'} color={'brand.100'} fontWeight={'bold'}>*</Text> nejsou povinné, avšak při rozhodování o přijetí serveru dodávají plusové body
           </Text>
           <Flex justifyContent={'flex-end'} width={'100%'} marginTop={2}>
             <Button colorScheme='red' variant={'outline'} mr={3} onClick={onClose}>Zavřít</Button>
