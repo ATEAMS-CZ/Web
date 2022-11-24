@@ -20,6 +20,7 @@ export const Server = ({imgKey, name, website}: ServerProps) => {
           height={'128px'}
           rounded={'md'}
           marginBottom={2}
+          loading={'lazy'}
         />
         <Link href={website} isExternal>
           {name}
