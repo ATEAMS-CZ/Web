@@ -20,7 +20,7 @@ export const Server = ({imgKey, name, website}: ServerProps) => {
           height={'128px'}
           width={'128px'}
           rounded={'md'}
-          marginBottom={2}
+          margin={'0 auto 0.5rem'}
           loading={'lazy'}
           alt={name +' logo'}
         />
