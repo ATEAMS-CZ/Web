@@ -18,7 +18,6 @@ interface AddServerModalProps {
 export const AddServerModal = ({isOpen, onClose}: AddServerModalProps) => {
   return (
     <Modal
-      isCentered
       onClose={onClose}
       isOpen={isOpen}
       motionPreset='slideInBottom'

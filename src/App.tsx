@@ -9,9 +9,9 @@ import {Section} from './components/Section';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faDiscord, faGithub, faInstagram} from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope, faPlus} from '@fortawesome/free-solid-svg-icons';
-import {AddServerModal} from './components/modals/AddServerModal';
 import {Fade} from 'react-awesome-reveal';
 import {OnlineState} from './enums/OnlineState';
+import {AddServerModal} from './components/modals/AddServerModal';
 
 export const App = () => {
   const [addServer, setAddServer] = React.useState(false);

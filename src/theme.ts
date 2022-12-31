@@ -72,6 +72,21 @@ export const theme = extendTheme({
         }),
       },
     },
+    Checkbox: {
+      defaultProps: {
+        colorScheme: 'brand',
+      },
+    },
+    Input: {
+      defaultProps: {
+        focusBorderColor: 'brand.100',
+      },
+    },
+    Textarea: {
+      defaultProps: {
+        focusBorderColor: 'brand.100',
+      },
+    },
   },
 });
 
