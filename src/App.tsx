@@ -1,8 +1,5 @@
 import * as React from 'react';
-import {
-  Box, Button,
-  ChakraProvider, Divider, Flex, Link, Text,
-} from '@chakra-ui/react';
+import {Box, Button, ChakraProvider, Divider, Flex, Link, Text} from '@chakra-ui/react';
 import {Header} from './components/Header';
 import {theme} from './theme';
 import {Server} from './components/Server';
@@ -10,10 +7,11 @@ import {Teammate} from './components/Teammate';
 import {Rank} from './enums/Rank';
 import {Section} from './components/Section';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faDiscord, faInstagram, faGithub} from '@fortawesome/free-brands-svg-icons';
+import {faDiscord, faGithub, faInstagram} from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope, faPlus} from '@fortawesome/free-solid-svg-icons';
 import {AddServerModal} from './components/modals/AddServerModal';
 import {Fade} from 'react-awesome-reveal';
+import {OnlineState} from './enums/OnlineState';
 
 export const App = () => {
   const [addServer, setAddServer] = React.useState(false);
@@ -58,7 +56,7 @@ export const App = () => {
             <Teammate id={'279012818886590464'} rank={Rank.MANAGER} link={'https://www.instagram.com/theerikcz/'} />
             <Teammate id={'245621893900664835'} rank={Rank.MODERATOR} link={'https://www.instagram.com/ta.lutysek/'} />
             <Teammate id={'512620748708380683'} rank={Rank.MODERATOR} link={'https://laby.net/@Fjuro'} />
-            <Teammate id={'535708984959827978'} rank={Rank.WEB_MASTER} link={'https://gggedr.lol/'}/>
+            <Teammate id={'535708984959827978'} rank={Rank.WEB_MASTER} link={'https://gggedr.lol/'} onlineStatus={OnlineState.ONLINE}/>
             <Teammate id={'284973303032971264'} rank={Rank.DEVELOPER} link={'https://laby.net/@ZorTik'}/>
             <Teammate id={'485434705903222805'} rank={Rank.DEVELOPER} link={'https://cybo.dev/'}/>
             <Teammate id={'442680903555350539'} rank={Rank.HELPER} link={'https://laby.net/@_OnlyAri_'} />
