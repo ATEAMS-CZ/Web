@@ -11,10 +11,14 @@ import {faDiscord, faGithub, faInstagram} from '@fortawesome/free-brands-svg-ico
 import {faEnvelope, faPlus} from '@fortawesome/free-solid-svg-icons';
 import {Fade} from 'react-awesome-reveal';
 import {OnlineState} from './enums/OnlineState';
-import {AddServerModal} from './components/modals/AddServerModal';
+import {AddServerRulesModal} from './components/modals/AddServerModal';
+import {useRecoilState} from 'recoil';
+import {ActiveModalAtom} from './recoil/atoms/ActiveModal';
+import {ActiveModal} from './enums/ActiveModal';
+import {AddServerFormModal} from './components/modals/AddServerModalForm';
 
 export const App = () => {
-  const [addServer, setAddServer] = React.useState(false);
+  const [activeModal, setActiveModal] = useRecoilState(ActiveModalAtom);
 
   return (
     <ChakraProvider theme={theme}>
@@ -40,7 +44,7 @@ export const App = () => {
 
           <Fade direction={'up'} triggerOnce={true}>
             <Button onClick={() => {
-              setAddServer(true);
+              setActiveModal(ActiveModal.ADD_SERVER_RULES);
             }} variant={'outline'} marginTop={8} colorScheme={'red'} leftIcon={<FontAwesomeIcon icon={faPlus} />}>Pridať server</Button>
 
             <Divider margin={'50px auto'} width={'80px'} backgroundColor={'brand.100'} borderColor={'brand.100'} opacity={1} height={1} rounded={'md'} />
@@ -87,9 +91,14 @@ export const App = () => {
           </Box>
         </Flex>
       </Flex>
-      <AddServerModal isOpen={addServer} onClose={() => {
-        setAddServer(false);
+
+      <AddServerRulesModal isOpen={activeModal === ActiveModal.ADD_SERVER_RULES} onClose={() => {
+        setActiveModal(ActiveModal.NONE);
       }} />
+      <AddServerFormModal isOpen={activeModal === ActiveModal.ADD_SERVER_FORM} onClose={() => {
+        setActiveModal(ActiveModal.NONE);
+      }} />
+
     </ChakraProvider>
   );
 };

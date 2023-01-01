@@ -1,6 +1,8 @@
 import React from 'react';
 import {
-  Button, Flex, Modal,
+  Button,
+  Flex,
+  Modal,
   ModalBody,
   ModalContent,
   ModalFooter,
@@ -9,13 +11,19 @@ import {
   Text,
 } from '@chakra-ui/react';
 import {Paragraph} from './Paragraph';
+import {useRecoilState} from 'recoil';
+import {ActiveModalAtom} from '../../../recoil/atoms/ActiveModal';
+import {ActiveModal} from '../../../enums/ActiveModal';
 
-interface AddServerModalProps {
+interface AddServerRulesModalProps {
     isOpen: boolean;
     onClose: () => void;
 }
 
-export const AddServerModal = ({isOpen, onClose}: AddServerModalProps) => {
+export const AddServerRulesModal = ({isOpen, onClose}: AddServerRulesModalProps) => {
+  // eslint-disable-next-line no-unused-vars
+  const [activeModal, setActiveModal] = useRecoilState(ActiveModalAtom);
+
   return (
     <Modal
       onClose={onClose}
@@ -41,7 +49,9 @@ export const AddServerModal = ({isOpen, onClose}: AddServerModalProps) => {
           </Text>
           <Flex justifyContent={'flex-end'} width={'100%'} marginTop={2}>
             <Button colorScheme='red' variant={'outline'} mr={3} onClick={onClose}>Zavřít</Button>
-            <Button variant='solid' colorScheme={'red'} as={'a'} href={'https://docs.google.com/forms/d/e/1FAIpQLSf5Igw_euENs9LtnXFRO7bcUKfZRQapvJylUOEGCnZMDECGhg/viewform'}>Pokračovat</Button>
+            <Button variant='solid' colorScheme={'red'} onClick={() => {
+              setActiveModal(ActiveModal.ADD_SERVER_FORM);
+            }}>Pokračovat</Button>
           </Flex>
         </ModalFooter>
       </ModalContent>

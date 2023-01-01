@@ -4,6 +4,7 @@ import * as ReactDOM from 'react-dom/client';
 import {App} from './App';
 import reportWebVitals from './reportWebVitals';
 import './styles/index.css';
+import {RecoilRoot} from 'recoil';
 
 
 const container = document.getElementById('root');
@@ -13,7 +14,9 @@ const root = ReactDOM.createRoot(container);
 root.render(
     <React.StrictMode>
       <ColorModeScript />
-      <App />
+      <RecoilRoot>
+        <App />
+      </RecoilRoot>
     </React.StrictMode>,
 );
 

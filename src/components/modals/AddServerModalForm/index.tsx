@@ -9,12 +9,12 @@ import {
   Text, Textarea,
 } from '@chakra-ui/react';
 
-interface AddServerModalFormProps {
+interface AddServerFormModalProps {
     isOpen: boolean;
     onClose: () => void;
 }
 
-export const AddServerModalForm = ({isOpen, onClose}: AddServerModalFormProps) => {
+export const AddServerFormModal = ({isOpen, onClose}: AddServerFormModalProps) => {
   return (
     <Modal
       onClose={onClose}
