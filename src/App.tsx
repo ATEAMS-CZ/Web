@@ -43,7 +43,7 @@ export const App = () => {
           <Fade direction={'up'} triggerOnce={true}>
             <Button onClick={() => {
               setAddServer(true);
-            }} variant={'outline'} marginTop={8} colorScheme={'red'} leftIcon={<FontAwesomeIcon icon={faPlus} />}>Pridať server</Button>
+            }} variant={'outline'} marginTop={8} colorScheme={'red'} leftIcon={<FontAwesomeIcon icon={faPlus} />}>Přidat server</Button>
 
             <Divider margin={'50px auto'} width={'80px'} backgroundColor={'brand.100'} borderColor={'brand.100'} opacity={1} height={1} rounded={'md'} />
           </Fade>
