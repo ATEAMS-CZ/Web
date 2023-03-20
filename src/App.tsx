@@ -55,9 +55,7 @@ export const App = () => {
           </>
         }>
           <Flex justifyContent={'center'} gap={12} flexWrap={'wrap'} maxWidth={'700px'} margin={'50px auto 0px auto'}>
-            <Teammate id={'279012818886590464'} rank={Rank.MANAGER} link={'https://www.instagram.com/theerikcz/'} />
-            <Teammate id={'245621893900664835'} rank={Rank.MODERATOR} link={'https://www.instagram.com/ta.lutysek/'} />
-            <Teammate id={'512620748708380683'} rank={Rank.MODERATOR} link={'https://fjuro.github.io/'} />
+            <Teammate id={'512620748708380683'} rank={Rank.MANAGER} link={'https://fjuro.github.io/'} />
             <Teammate id={'535708984959827978'} rank={Rank.WEB_MASTER} link={'https://gggedr.lol/'}/>
             <Teammate id={'284973303032971264'} rank={Rank.DEVELOPER} link={'https://laby.net/@ZorTik'}/>
             <Teammate id={'485434705903222805'} rank={Rank.DEVELOPER} link={'https://cybo.dev/'}/>
