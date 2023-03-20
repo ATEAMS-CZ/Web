@@ -10,7 +10,7 @@ import {Teammate} from './components/Teammate';
 import {Rank} from './enums/Rank';
 import {Section} from './components/Section';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faDiscord, faInstagram, faGithub} from '@fortawesome/free-brands-svg-icons';
+import {faDiscord, faGithub} from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope, faPlus} from '@fortawesome/free-solid-svg-icons';
 import {AddServerModal} from './components/modals/AddServerModal';
 import {Fade} from 'react-awesome-reveal';
