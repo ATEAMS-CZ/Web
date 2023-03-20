@@ -75,9 +75,6 @@ export const App = () => {
               <Link href={'https://discord.com/invite/9QkwCR2'} aria-label={'ATEAMS.cz Discord'} isExternal>
                 <FontAwesomeIcon icon={faDiscord} />
               </Link>
-              <Link href={'https://www.instagram.com/ateams.cz/'} aria-label={'ATEAMS.cz Instagram'} isExternal>
-                <FontAwesomeIcon icon={faInstagram} />
-              </Link>
               <Link href={'https://github.com/ATEAMS-CZ'} aria-label={'ATEAMS.cz GitHub'} isExternal>
                 <FontAwesomeIcon icon={faGithub} />
               </Link>
