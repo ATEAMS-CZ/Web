@@ -14,7 +14,7 @@ interface TeammateProps {
 }
 
 export const Teammate = ({id, rank, link}: TeammateProps) => {
-  const {data} = useSWR<DiscordUser>('/users/'+ id, getData);
+  const {data} = useSWR<DiscordUser>('/user/'+ id, getData);
 
   return (
     <Fade direction={'up'} triggerOnce={true}>
