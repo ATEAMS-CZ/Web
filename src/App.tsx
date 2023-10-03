@@ -62,7 +62,7 @@ export const App = () => {
             <Teammate id={'442680903555350539'} rank={Rank.HELPER} link={'https://laby.net/@_OnlyAri_'} />
             <Teammate id={'706933274098008175'} rank={Rank.HELPER} link={'https://laby.net/@iSquu'}/>
             <Teammate id={'207576945779539968'} rank={Rank.HELPER} link={'https://laby.net/@Mirayi_'}/>
-            <Teammate id={'261525552014426114'} rank={Rank.HELPER} link={'https://laby.net/@Dragan'}/>
+            <Teammate id={'261525552014426114'} rank={Rank.HELPER} link={'https://github.com/VaclavKlima'}/>
             <Teammate id={'529425908222918656'} rank={Rank.HELPER} link={'https://laby.net/@CocoWolffy'}/>
           </Flex>
         </Section>
