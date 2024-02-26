@@ -32,12 +32,7 @@ export const App = () => {
             <Server imgKey={'craftmania'} name={'CraftMania.cz'} website={'https://craftmania.cz/'} />
             <Server imgKey={'warfaremc'} name={'WarfareMC.eu'} website={'https://warfaremc.eu/'} />
             <Server imgKey={'czech-survival'} name={'Czech-Survival.cz'} website={'https://czech-survival.cz/'} />
-            <Server imgKey={'midnightmc'} name={'Midnightmc'} website={'https://midnightmc.cz/'} />
-            <Server imgKey={'slux'} name={'Slux'} website={'https://slux.cz/'} />
             <Server imgKey={'minehub'} name={'MineHub.cz'} website={'https://minehub.cz/'} />
-            <Server imgKey={'matherion'} name={'Matherion'} website={'https://matherion.eu/'} />
-            <Server imgKey={'lendmark'} name={'LendMark.sk'} website={'https://lendmark.sk/'} />
-            <Server imgKey={'voxelcraft'} name={'VoxelCraft.cz'} website={'https://voxelcraft.cz/'} />
           </Flex>
 
           <Fade direction={'up'} triggerOnce={true}>
